@@ -4,7 +4,7 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMe
 // import { setIsLoggedIn, setUsername } from '../data/user/user.actions';
 // import { connect } from '../data/connect';
 import { RouteComponentProps } from 'react-router';
-
+import "../pages/Login.css"
 interface OwnProps extends RouteComponentProps {}
 
 interface DispatchProps {
@@ -50,11 +50,9 @@ interface DispatchProps {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-
-        <div className="login-logo">
-          <img src="assets/img/appicon.svg" alt="Ionic logo" />
+      <div className="loginLogo">
+          <img src="assets/ipo_logo.png" alt="ipo_logo" />
         </div>
-
         <form noValidate onSubmit={login}>
           <IonList>
             <IonItem>
